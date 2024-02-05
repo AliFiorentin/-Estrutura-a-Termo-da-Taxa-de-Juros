@@ -23,4 +23,35 @@ $f(m)= \beta_0 + \beta_1 e^{ \left(-\frac{m}{ \tau_1}\right)} + \beta_2 \left(\d
 </p>
 
 ## Resultados e Simulações
-Para calcular os parâmetros do modelo de Svensson, define-se como nosso item de estimação, a taxa à vista de um título do Tesouro Direto Prefixado. Títulos de curta maturidade são menos afetados por mudanças nas taxas de juros em comparação com títulos de maturidades mais longas. Uma pequena flutuação nos preços de títulos de curto prazo pode ter um grande impacto nas taxas de juros. 
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+
+Requisitos: R >= v.4.0  
+Pacotes: Xts e Zoo.
+
+Para calcular os parâmetros do modelo de Svensson, define-se como nosso item de estimação, a taxa à vista de um título do Tesouro Direto Prefixado. Títulos de curta maturidade são menos afetados por mudanças nas taxas de juros em comparação com títulos de maturidades mais longas. Uma pequena flutuação nos preços de títulos de curto prazo pode ter um grande impacto nas taxas de juros.  A Tabela abaixo contém os títulos do Tesouro Prefixado (LTN) disponíveis no Tesouro Direto no dia 11 de maio de 2023.
+
+| Maturidade em dias | Maturidade em anos | Taxa à Vista (\% a.a) |
+|:--------------------:|:-------------------:|:-----------------------:|
+| 21                 | 0,0833333           | 13,4959                |
+| 42                 | 0,166667            | 13,6580                |
+| 63                 | 0,25                | 13,7150                |
+| 126                | 0,5                 | 13,5102                |
+| 252                | 1                   | 12,6160                |
+| 504                | 2                   | 11,5999                |
+| 756                | 3                   | 11,5079                |
+| 1008               | 4                   | 11,6765                |
+| 1260               | 5                   | 11,8662                |
+| 2.394              | 9,5                 | 12,3494                |
+
+
+Considera-se como um ano-base de 252 dias úteis e 21 dias úteis para um mês, como foi estabelecido pelo Banco Central do Brasil.
+
+A partir dos dados coletados da Tabela acima, estima-se por meio do software RStudio os parâmetros $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\tau_1$ e $\tau_2$. Para isso, usa-se o pacote *YieldCurve* com a função "Svensson(*rate,maturity*)", Desse modo, os valores encontrados foram: $\beta_0=13,13126$, $\beta_1=0,3110679$, $\beta_2=18,65667$, $\beta_3=-21,86461$, $\tau_1=0,6041051$ e $\tau_2=0,8364546$. Substituindo os parâmetros calculados na equação de Svensson, obtém-se:
+
+<p align="center">
+$F(m)=13,13173 + 0,3105974 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)}\right] + \\
+    + 18,66107 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)} - e^{\left(\frac{-m}{0,604105}\right)}\right] + \\
+     -21,8708\left[\dfrac{1-e^{\left(\frac{-m}{0,8364546}\right)}}{\left(\dfrac{m}{0,8364546}\right)} - e^{\left(\frac{-m}{0,8364546}\right)}\right]$
+</p>
+
+A ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais), em sua rotina diária, realiza a divulgação em seu portal oficial os dados de sua ETTJ estimada. Nesse sentido, coleta-se tanto a curva como os parâmetros relacionados divulgados no dia 10/05/2023, permitindo uma comparação com a curva obtida, conforme ilustrado na Figura abaixo. Importante salientar que tal comparação revela a presença de um erro quadrático médio (EQM) de 0,3172\%.
