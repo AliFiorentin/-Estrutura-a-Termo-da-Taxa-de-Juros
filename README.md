@@ -55,3 +55,23 @@ $F(m)=13,13173 + 0,3105974 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{
 </p>
 
 A ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais), em sua rotina diária, realiza a divulgação em seu portal oficial os dados de sua ETTJ estimada. Nesse sentido, coleta-se tanto a curva como os parâmetros relacionados divulgados no dia 10/05/2023, permitindo uma comparação com a curva obtida, conforme ilustrado na Figura abaixo. Importante salientar que tal comparação revela a presença de um erro quadrático médio (EQM) de 0,3172\%.
+
+<p align="center">
+Figura: Comparação ETTJ IPCA da ANBIMA com a ETTJ IPCA Estimada.
+<p>
+
+<p align="center">
+  <img src="https://github.com/AliFiorentin/Estrutura-a-Termo-da-Taxa-de-Juros/assets/131291202/543fb838-2629-4fb3-8841-7b261dd65235" alt="Simulação SVN" />
+</p>
+
+    
+## Conclusão
+Para a construção da ETTJ foram estudados os modelos de Nelson e Siegel e sua extensão proposta por Svensson para a previsão da curva de juros, onde esses modelos são amplamente utilizados pelo BCB, ANBIMA e por diversos bancos centrais de vários países, pelo fato de serem de fácil implementação e por seu ajuste aos diversos formatos de curvas de taxas de juros.
+
+Utilizando dados do Tesouro Direto sobre as taxas de juros do tesouro prefixado, aplica-se um método computacional utilizando o software RStudio em conjunto com o pacote *YieldCurve* através de regressões lineares que minimizam o modelo de Svensson, para se obter os parâmetros $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\tau_1$ e $\tau_2$ a fim de construir a ETTJ que descreve a curva de juros da taxa à vista, onde, observa-se que essa curva de juros mostra as taxas de juros de diferentes prazos de vencimento, ou seja, o retorno que um investidor receberia ao comprar e manter esses títulos até seus respectivos vencimentos. Essa estrutura permite que os investidores e analistas avaliem as expectativas do mercado em relação às taxas de juros futuras, bem como a percepção de risco e as condições econômicas.
+
+### Bibliografia
+-[Bank for International Settlements](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1188514)  
+-[Measuring the Term Structure of Interest Rates](http://www.jstor.org/stable/2351832)  
+-[Estimating and Interpreting Forward Interest Rates](https://www.elibrary.imf.org/downloadpdf/journals/001/1994/114/001.1994.issue-114-en.xml)  
+-[Parsimonious Modeling of Yield Curves](http://www.jstor.org/stable/2352957)  
