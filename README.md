@@ -50,7 +50,7 @@ A partir dos dados coletados da Tabela acima, estima-se por meio do software RSt
 
 <p align="center">
 $F(m)=13,13173 + 0,3105974 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)}\right] + \\
-    + 18,66107 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)} - e^{\left(\frac{-m}{0,604105}\right)}\right] + \\
+    + 18,66107 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)} - e^{\left(\frac{-m}{0,604105}\right)}\right] \\
      -21,8708\left[\dfrac{1-e^{\left(\frac{-m}{0,8364546}\right)}}{\left(\dfrac{m}{0,8364546}\right)} - e^{\left(\frac{-m}{0,8364546}\right)}\right]$
 </p>
 
