@@ -2,7 +2,7 @@
 
 A Estrutura a Termo da Taxa de Juros (também conhecida como *Yield Curve*) é a relação, em um determinado momento, entre as taxas de juros de títulos de renda fixa das mesmas linhas de crédito, mas com vencimentos diferentes. Ela é normalmente formada a partir de títulos que pagam apenas juros no vencimento, ou seja, títulos de cupom zero (ou *zero coupon bonds*). A ETTJ é extremamente importante para os mercados financeiros, visto que é a base para a precificação de instrumentos de renda fixa, em que, também serve como referência para determinar o índice dos demais setores do mercado de dívida.
 
-A ETTJ pode ser construída a partir das taxas à vista, taxas futuras ou pela função desconto, contudo, como todas estão relacionadas entre si, pode-se a partir de uma, determinar ou estimar as outras. Neste trabalho estudam-se os modelos de [Charle R. Nelson e Andrew F. Siegel](http://www.jstor.org/stable/2352957)  e [Lars E. O. Svensson](https://www.elibrary.imf.org/downloadpdf/journals/001/1994/114/001.1994.issue-114-en.xml) , um dos mais utilizados pelo Banco Central do Brasil e por diversos outros bancos centrais, como os bancos centrais da Bélgica, França, Alemanha, Suécia e Suíça.
+A ETTJ pode ser construída a partir das taxas à vista, taxas futuras ou pela função desconto, contudo, como todas estão relacionadas entre si, pode-se a partir de uma, determinar ou estimar as outras. Neste trabalho estudam-se os modelos de [Charle R. Nelson e Andrew F. Siegel](http://www.jstor.org/stable/2352957)  e [Lars E. O. Svensson](https://www.elibrary.imf.org/downloadpdf/journals/001/1994/114/001.1994.issue-114-en.xml) , um dos mais utilizados pelo Banco Central do Brasil (BCB) e por diversos outros bancos centrais, como os bancos centrais da Bélgica, França, Alemanha, Suécia e Suíça.
 
 ### O Modelo Nelson e Siegel (1987)
 Em seu trabalho "*Parsimonious Modeling of Yield Curves*", propõem o uso da solução da equação diferencial ordinária linear de segunda ordem com valores reais e raízes diferentes para representar uma previsão das taxas a termo. Por exemplo, se a taxa de juros instantânea na maturidade *m*, denotada *f(m)*, é dada pela solução de uma equação diferencial ordinária de segunda ordem com valores reais e raízes iguais, tem-se:
@@ -61,7 +61,7 @@ Figura: Comparação ETTJ IPCA da ANBIMA com a ETTJ IPCA Estimada.
 <p>
 
 <p align="center">
-  <img src="https://github.com/AliFiorentin/Estrutura-a-Termo-da-Taxa-de-Juros/assets/131291202/543fb838-2629-4fb3-8841-7b261dd65235" alt="Simulação SVN" />
+  <img src="https://github.com/AliFiorentin/Estrutura-a-Termo-da-Taxa-de-Juros/assets/131291202/94c7a318-0576-445c-829b-76730a76af57" alt="Simulação SVN" />
 </p>
 
 ## Conclusão
