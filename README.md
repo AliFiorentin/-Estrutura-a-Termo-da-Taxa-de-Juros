@@ -1,1 +1,3 @@
-# -Estrutura-a-Termo-da-Taxa-de-Juros
+# Estrutura a Termo da Taxa de Juros
+
+A Estrutura a Termo da Taxa de Juros (também conhecida como Yield Curve) é a relação, em um determinado momento, entre as taxas de juros de títulos de renda fixa das mesmas linhas de crédito, mas com vencimentos diferentes. Ela é normalmente formada a partir de títulos que pagam apenas juros no vencimento, ou seja, títulos de cupom zero (ou zero coupon bonds). A ETTJ é extremamente importante para os mercados financeiros, visto que é a base para a precificação de instrumentos de renda fixa, em que, também serve como referência para determinar o índice dos demais setores do mercado de dívida.
