@@ -64,7 +64,6 @@ Figura: Comparação ETTJ IPCA da ANBIMA com a ETTJ IPCA Estimada.
   <img src="https://github.com/AliFiorentin/Estrutura-a-Termo-da-Taxa-de-Juros/assets/131291202/543fb838-2629-4fb3-8841-7b261dd65235" alt="Simulação SVN" />
 </p>
 
-    
 ## Conclusão
 Para a construção da ETTJ foram estudados os modelos de Nelson e Siegel e sua extensão proposta por Svensson para a previsão da curva de juros, onde esses modelos são amplamente utilizados pelo BCB, ANBIMA e por diversos bancos centrais de vários países, pelo fato de serem de fácil implementação e por seu ajuste aos diversos formatos de curvas de taxas de juros.
 
