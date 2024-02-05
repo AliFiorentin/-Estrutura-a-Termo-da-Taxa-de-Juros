@@ -49,7 +49,7 @@ Considera-se como um ano-base de 252 dias úteis e 21 dias úteis para um mês, 
 A partir dos dados coletados da Tabela acima, estima-se por meio do software RStudio os parâmetros $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\tau_1$ e $\tau_2$. Para isso, usa-se o pacote *YieldCurve* com a função "Svensson(*rate,maturity*)", Desse modo, os valores encontrados foram: $\beta_0=11.21687$, $\beta_1=0.4217495$, $\beta_2=0.5502931$, $\beta_3=-6.163024 $, $\tau_1=0,6041051$ e $\tau_2=0.8364607$. Substituindo os parâmetros calculados na equação de Svensson, obtém-se:
 
 <p align="center">
-$F(m)=11.21687 + 0.4217495 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)}\right] + \\
+$F(m)=11.21687 + 0.4217495 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)}\right] \\
     + 0.5502931 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{\left(\dfrac{m}{0,604105}\right)} - e^{\left(\frac{-m}{0,604105}\right)}\right] \\
      -6.163024 \left[\dfrac{1-e^{\left(\frac{-m}{0.8364607}\right)}}{\left(\dfrac{m}{0.8364607}\right)} - e^{\left(\frac{-m}{0.8364607}\right)}\right]$
 </p>
@@ -57,7 +57,7 @@ $F(m)=11.21687 + 0.4217495 \left[\dfrac{1-e^{\left(\frac{-m}{0,604105}\right)}}{
 A ANBIMA (Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais), em sua rotina diária, realiza a divulgação em seu portal oficial os dados de sua ETTJ estimada. Nesse sentido, coleta-se tanto a curva como os parâmetros relacionados divulgados no dia 31/01/2024, permitindo uma comparação com a curva obtida, conforme ilustrado na Figura abaixo.
 
 <p align="center">
-Figura: Comparação ETTJ IPCA da ANBIMA com a ETTJ IPCA Estimada.
+Figura: Comparação ETTJ da ANBIMA com a ETTJ Estimada.
 <p>
 
 <p align="center">
